@@ -2,6 +2,7 @@
   <dictionary name="TeamHDEJ">
     <words>
       <w>deviceready</w>
+      <w>keyup</w>
     </words>
   </dictionary>
 </component>
