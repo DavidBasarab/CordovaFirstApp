@@ -1,8 +1,6 @@
 var app = {
 
-
     showAlert: function (message, title) {
-//        console.log(message);
         if (navigator.notification) {
             navigator.notification.alert(message, null, title, 'OK');
         } else {
@@ -12,9 +10,7 @@ var app = {
 
     route: function () {
         var hash = window.location.hash;
-        this.showAlert("App detail  url = " + hash, "route");
         var match = hash.match(app.detailsURL);
-        this.showAlert("match = " + match, "route");
         if (match) {
             this.showAlert("Inside of if(match)", "route");
             this.store.findById(Number(match[1]), function (employee) {
@@ -22,8 +18,6 @@ var app = {
             });
             return;
         }
-
-        this.showAlert("Showing HomeView", "route");
 
         // Always want to make sure something shows on the page
         $('body').html(new HomeView(this.store).render().el);
