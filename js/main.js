@@ -2,6 +2,7 @@ var app = {
 
 
     showAlert: function (message, title) {
+        console.log(message);
         if (navigator.notification) {
             navigator.notification.alert(message, null, title, 'OK');
         } else {
