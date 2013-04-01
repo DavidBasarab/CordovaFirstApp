@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-    background: #666;
+    background-color: #662d46;
     -webkit-background-size: 1px 44px;
     -moz-background-size: 1px 44px;
     -ms-background-size: 1px 44px;
@@ -55,13 +55,23 @@ body {
 }
 
 .search-bar {
-    background: #ccc;
+    background: #bb6ecc;
     height: 32px;
     padding-left:6px;
     padding-right: 6px;
     padding-top: 6px;
     margin-bottom: 6px;
     border-bottom: solid 1px #666;
+}
+
+.scroll {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    top: 84px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 }
 
 input[type="search"] {
