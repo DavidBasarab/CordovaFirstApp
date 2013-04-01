@@ -11,12 +11,13 @@ var app = {
 
     route: function () {
         var hash = window.location.hash;
-        this.showAlert("App detail  url = " + hash, "start Up");
+        this.showAlert("App detail  url = " + hash, "route");
         var match = hash.match(app.detailsURL);
+        this.showAlert("match = " + match, "route");
         if (match) {
             this.store.findById(Number(match[1]), function (employee) {
                 $('body').html(new EmployeeView(employee).render().el);
-            })
+            });
             return;
         }
 
