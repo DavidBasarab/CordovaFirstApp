@@ -105,6 +105,11 @@ li {
     padding: 10px;
 }
 
+li>a.tappable-active {
+    color: #ffffff;
+    background-color: #4286f5;
+}
+
 ul {
     margin: 0;
     padding: 0;
