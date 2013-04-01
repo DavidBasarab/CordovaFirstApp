@@ -55,7 +55,7 @@ var app = {
             self.route();
         });
 
-        self.registerEvents();
+        //self.registerEvents();
     }
 };
 
