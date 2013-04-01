@@ -21,6 +21,8 @@ var app = {
             return;
         }
 
+        this.showAlert("Showing HomeView", "route");
+
         // Always want to make sure something shows on the page
         $('body').html(new HomeView(this.store).render().el);
     },
