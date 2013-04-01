@@ -15,6 +15,7 @@ var app = {
         var match = hash.match(app.detailsURL);
         this.showAlert("match = " + match, "route");
         if (match) {
+            this.showAlert("Inside of if(match)", "route");
             this.store.findById(Number(match[1]), function (employee) {
                 $('body').html(new EmployeeView(employee).render().el);
             });
