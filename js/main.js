@@ -11,6 +11,7 @@ var app = {
 
     route: function () {
         var hash = window.location.hash;
+        this.showAlert("App detail  url = " + hash, "start Up");
         var match = hash.match(app.detailsURL);
         if (match) {
             this.store.findById(Number(match[1]), function (employee) {
